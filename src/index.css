@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body{
+  color: #002152;
+}
+
+button{
+  background-color: #002152;
+}
+
+.b2{
+  color: #002152;
+  
+}
+
+.b2:hover{
+  background-color: #002152;
+}
+
+
