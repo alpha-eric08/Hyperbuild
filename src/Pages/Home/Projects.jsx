@@ -1,5 +1,5 @@
 import React from 'react'
-import { project01, project02, project03 } from '../assets/images'
+import { project01, project02, project03 } from '../../assets/images'
 
 const Projects = () => {
   return (

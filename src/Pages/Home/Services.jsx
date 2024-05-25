@@ -1,5 +1,5 @@
 import React from 'react'
-import { service01, service02 } from '../assets/images'
+import { service01, service02 } from '../../assets/images'
 
 const Services = () => {
   return (

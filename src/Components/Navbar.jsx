@@ -10,7 +10,7 @@ import { IoMenu } from "react-icons/io5";
 const Navbar = () => {
       let Links =[
         {name:"Home",link:"/"},
-        {name:"About Us",link:"/"},
+        {name:"About Us",link:"/about"},
         {name:"Service",link:"/"},
         {name:"Blog",link:"/"},
         {name:"Contact Us",link:"/"},

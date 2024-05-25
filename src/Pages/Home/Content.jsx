@@ -1,7 +1,7 @@
 import React from 'react'
 import Passage from './Passage'
 import Projects from './Projects'
-import Forms from './Forms'
+import Forms from '../../Components/Forms'
 
 const Content = () => {
   return (
