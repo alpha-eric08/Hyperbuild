@@ -1,10 +1,14 @@
 import React from 'react'
-import Main from './Components/Main'
+import { RouterProvider } from 'react-router-dom'
+import { rootRoutes } from './Pages'
+import { Toaster } from 'react-hot-toast'
+
 
 function App() {
   return (
     <div>
-      <Main />
+      <RouterProvider router={rootRoutes}/>
+      <Toaster />
     </div>
   )
 }

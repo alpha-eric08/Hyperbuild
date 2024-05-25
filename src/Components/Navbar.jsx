@@ -27,7 +27,7 @@ const Navbar = () => {
        </div>
       
        <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
-       <MdOutlineClose name={open ? 'close':'menu'}  />
+       {open ? <IoMenu /> : <MdOutlineClose/>}
        </div>
 
        <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
@@ -38,8 +38,10 @@ const Navbar = () => {
             </li>
           ))
         }
+
+          <button className='b2 hover:text-white py-2 px-6 rounded-md bg-white  md:ml-8 font-inter font-semibold border-black border-2 md:hidden'>Get started</button>
        </ul>
-       <div className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
+       <div className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'hidden':'top-[-490px]'}`}>
           <button className='b2 hover:text-white py-2 px-6 rounded-md bg-white  md:ml-8 font-inter font-semibold border-black border-2'>Get started</button>
        </div>
 
@@ -50,10 +52,3 @@ const Navbar = () => {
  }
 
 export default Navbar
-
-
-    
-     
-
-
-
