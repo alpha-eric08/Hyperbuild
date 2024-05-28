@@ -1,6 +1,6 @@
 import React from 'react'
 import { RouterProvider } from 'react-router-dom'
-import { rootRoutes } from './Pages'
+import { rootRoutes } from './Pages/Sections'
 import { Toaster } from 'react-hot-toast'
 
 

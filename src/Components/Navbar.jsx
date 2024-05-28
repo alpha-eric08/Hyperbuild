@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { MdOutlineClose } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
+import { logo } from '../assets/images';
 
 
 
@@ -10,20 +11,19 @@ import { IoMenu } from "react-icons/io5";
 const Navbar = () => {
       let Links =[
         {name:"Home",link:"/"},
-        {name:"About Us",link:"/about"},
-        {name:"Service",link:"/"},
-        {name:"Blog",link:"/"},
-        {name:"Contact Us",link:"/"},
+        {name:"About",link:"/about"},
+        {name:"Portfolio",link:"/portfolio"},
+        {name:"Contact",link:"/contact"},
       ];
 
       let [open,setOpen]=useState(false);
 
  
   return (
-    <div className='shadow-md w-full fixed top-0 left-0'>
-      <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
-       <div className='font-bold font-inter text-2xl cursor-pointer flex items-center'>
-         BuildVision
+    <div className='shadow-md w-full sticky z-10 top-0 left-0'>
+      <div className='md:flex items-center justify-between bg-white py-1 md:px-10 px-7'>
+       <div>
+          <a href="/"><img src={ logo} alt="logo" className='rounded-xl h-16 md:ml-10'/></a>
        </div>
       
        <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
@@ -39,10 +39,10 @@ const Navbar = () => {
           ))
         }
 
-          <button className='b2 hover:text-white py-2 px-6 rounded-md bg-white  md:ml-8 font-inter font-semibold border-black border-2 md:hidden'>Get started</button>
+          <button className='bg-rose-500  py-2 px-6 rounded-md  hover:bg-rose-700 text-white md:ml-8 font-inter font-semibold md:hidden'>Get started</button>
        </ul>
        <div className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'hidden':'top-[-490px]'}`}>
-          <button className='b2 hover:text-white py-2 px-6 rounded-md bg-white  md:ml-8 font-inter font-semibold border-black border-2'>Get started</button>
+          <button className=' bg-rose-500 md:ml-8 py-2 px-5 rounded-md hover:bg-rose-700 font-semibold text-xl text-white '>Get A Quote</button>
        </div>
 
 

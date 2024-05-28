@@ -14,12 +14,20 @@ button{
   background-color: #002152;
 }
 
+button:hover{
+  background-color: #013583;
+}
+
 .b2{
   color: #002152;
   
 }
 
 .b2:hover{
+  background-color: #002152;
+}
+
+.footer,.testimonials{
   background-color: #002152;
 }
 

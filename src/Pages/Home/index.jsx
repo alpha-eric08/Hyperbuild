@@ -1,17 +1,22 @@
 import React from 'react'
-import Hero from './Hero'
-import Content from './Content'
-import Services from './Services'
-import Testimonials from './Testimonials'
+import Hero from '../Sections/Hero'
+import Started from '../Sections/Started'
+import Passage from '../Sections/Passage'
+import Testimonials from '../Sections/Testimonials'
+import SignUp from '../Sections/SignUp'
+import Gmap from '../../Components/Gmap'
+
 
 
 const Home = () => {
   return (
     <div>
-       <Hero />
-        <Content />
-        <Services />
-        <Testimonials />
+      <Hero />
+      <Started />
+      <Passage />
+      <Testimonials />
+      <SignUp />
+      <Gmap />
     </div>
   )
 }

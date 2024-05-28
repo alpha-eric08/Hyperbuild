@@ -9,11 +9,9 @@ const Forms = () => {
   };
 
   return (
-    <div className='mx-auto my-10 '>
-      <div className='  bg-white rounded-md mx-5  shadow-xl overflow-hidden'>
-        <div className='ml-4 md:ml-0 px-10 py-4 md:px-32'>
+    <div className=' py-4'>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-5 px-2'>
               <div>
                 <label htmlFor="firstName">First Name</label>
                 <input
@@ -21,7 +19,7 @@ const Forms = () => {
                   id='firstName'
                   placeholder='FirstName'
                   {...register('firstname', { required: 'First name is required' })}
-                  className='border border-gray-400 py-1 px-2 w-full rounded-md bg-gray-200'
+                  className='border border-gray-400 py-1.5 px-2 w-full rounded-md'
                   />
                 {errors.firstname && <span className='text-red-600'>{errors.firstname.message}</span>}
               </div>
@@ -32,7 +30,7 @@ const Forms = () => {
                   id='lastName'
                   placeholder='LastName'
                   {...register('lastname', { required: 'Last name is required' })}
-                  className='border border-gray-400 py-1 w-full rounded-md bg-gray-200'
+                  className='border border-gray-400 py-1.5 px-2 w-full rounded-md'
                 />
                 {errors.lastname && <span className='text-red-600'>{errors.lastname.message}</span>}
               </div>
@@ -43,7 +41,7 @@ const Forms = () => {
                   id='company'
                   placeholder='CompanyName'
                   {...register('company', { required: 'Company name is required' })}
-                  className='border border-gray-400 py-1 px-2 w-full rounded-md bg-gray-200'
+                  className='border border-gray-400 py-1.5 px-2 w-full rounded-md'
                 />
                 {errors.company && <span className='text-red-600'>{errors.company.message}</span>}
               </div>
@@ -59,7 +57,7 @@ const Forms = () => {
                     message: 'Invalid phone number'
                   }
                    })}
-                  className='border border-gray-400 py-1 px-2 w-full rounded-md bg-gray-200'
+                  className='border border-gray-400 py-1.5 px-2 w-full rounded-md'
                 />
                 {errors.phone && <span className='text-red-600'>{errors.phone.message}</span>}
               </div>
@@ -75,7 +73,7 @@ const Forms = () => {
                     message: 'Invalid email address'
                   }
                    })}
-                  className='border border-gray-400 py-1 px-2 w-full rounded-md bg-gray-200'
+                  className='border border-gray-400 py-1.5 px-2 w-full rounded-md'
                 />
                 {errors.email && <span className='text-red-600'>{errors.email.message}</span>}
               </div>
@@ -84,17 +82,20 @@ const Forms = () => {
                 <textarea
                   placeholder='Enter your description here....'
                   {...register('description', { required: 'Project description is required' })}
-                  className='border border-gray-400 py-1 px-2 w-full resize-none bg-gray-200'
+                  className='border rounded-md border-gray-400 py-2 px-2 w-full resize-none'
                   id='project'
                 ></textarea>
                 {errors.description && <span className='text-red-600'>{errors.description.message}</span>}
               </div>
-              <button type="submit" className="hover:bg-slate-600 py-1 mt-5 w-2/12 rounded-md text-center text-white">Send</button>
+              <div>
+                <button type="submit" className=" my-2 text-center py-2 px-4 text-white font-semibold rounded">Send</button>
+              </div>
             </div>
           </form>
+          <div className=' font-bold text-xl text-center py-8'>
+            <p><span className=' font-extrabold'>NB:</span> Please fill out this form, and we will reach out to you shortly to begin the discussion about your project.</p>
+          </div>
         </div>
-      </div>
-    </div>
   );
 }
 
