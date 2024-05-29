@@ -35,6 +35,13 @@ export const rootRoutes = createBrowserRouter(
             return { Component: Contact };
           }}
         />
+        <Route
+        path="*"
+        lazy={async () => {
+          const { default: NotFound } = await import("../Notfound/404");
+          return { Component: NotFound };
+        }}
+      />
       </Route>
 
     </>

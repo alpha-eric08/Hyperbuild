@@ -11,9 +11,11 @@ import project01 from './project01.png'
 import project02 from './project02.png'
 import project03 from './project03.png'
 
+import contactbg from './contactbg.png'
+
 
 
 
 export {
-    logo, herobg, durable, affordable, frame, cmticon, signupbg, before01, before02,  project01, project02, project03
+    logo, herobg, durable, affordable, frame, cmticon, signupbg, before01, before02,  project01, project02, project03, contactbg
 }
