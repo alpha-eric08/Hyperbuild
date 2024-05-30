@@ -88,11 +88,11 @@ const Forms = () => {
                 {errors.description && <span className='text-red-600'>{errors.description.message}</span>}
               </div>
               <div>
-                <button type="submit" className=" my-2 text-center py-2 px-4 text-white font-semibold rounded">Send</button>
+                <button type="submit"  className=" my-2 text-center py-2 px-4 text-white font-semibold rounded">Send</button>
               </div>
             </div>
           </form>
-          <div className=' font-bold text-xl text-center py-8'>
+          <div className=' font-semibold text-xl text-center py-8'>
             <p><span className=' font-extrabold'>NB:</span> Please fill out this form, and we will reach out to you shortly to begin the discussion about your project.</p>
           </div>
         </div>

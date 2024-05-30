@@ -10,7 +10,6 @@ import before02 from "./before02.png";
 import project01 from "./project01.png";
 import project02 from "./project02.png";
 import project03 from "./project03.png";
-import move from "./move.png";
 
 export {
   logo,
@@ -25,5 +24,4 @@ export {
   project01,
   project02,
   project03,
-  move,
 };
