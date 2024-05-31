@@ -20,6 +20,22 @@ import pic5 from "./pic5.jpg";
 import pic6 from "./pic6.jpg";
 import pic7 from "./pic7.jpg";
 import pic8 from "./pic8.jpg";
+import Rectanglee49 from "./Rectanglee49.png";
+import Rectangle50 from "./Rectangle50.png";
+import Rectangle51 from "./Rectangle51.png";
+import Rectangle52 from "./Rectangle52.png";
+import Rectangle53 from "./Rectangle53.png";
+import Rectangle54 from "./Rectangle54.png";
+import Rectangle55 from "./Rectangle55.png";
+import Rectangle56 from "./Rectangle56.png";
+import Rectangle57 from "./Rectangle57.png";
+import Rectangle58 from "./Rectangle58.png";
+import Rectangle59 from "./Rectangle59.png";
+import Rectangle60 from "./Rectangle60.png";
+import Rectangle61 from "./Rectangle61.png";
+import Rectangle62 from "./Rectangle62.png";
+import Rectangle63 from "./Rectangle63.png";
+import Rectangle64 from "./Rectangle64.png";
 
 export {
   logo,
@@ -44,4 +60,20 @@ export {
   pic6,
   pic7,
   pic8,
+  Rectanglee49,
+  Rectangle50,
+  Rectangle51,
+  Rectangle52,
+  Rectangle53,
+  Rectangle54,
+  Rectangle55,
+  Rectangle56,
+  Rectangle57,
+  Rectangle58,
+  Rectangle59,
+  Rectangle60,
+  Rectangle61,
+  Rectangle62,
+  Rectangle63,
+  Rectangle64,
 };
