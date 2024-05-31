@@ -10,15 +10,15 @@ const Info = () => {
         <h1 className=" md:text-5xl text-4xl font-semibold ">About Us</h1>
       </div>
       <div className="flex w-full">
-        <div className="w-[50%]">
+        <div className="w-[60%]">
           <Text />
         </div>
 
-        <div className="w-[50%] items-center justify-center mt-10 px-10 ">
+        <div className="w-[40%] items-center justify-center mt-10 px-10 ">
           <img
             src={move}
             alt=""
-            className="rounded-full object-cover w-3/6 h-"
+            className="rounded-full object-cover w-4/6 h-60"
           />
           <img src={logo} alt="" />
         </div>

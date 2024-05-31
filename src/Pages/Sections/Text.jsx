@@ -7,7 +7,7 @@ const Text = () => {
       <p className="font-bold text-base text-gray-800 w-4/5">
         Explore the essence of our brand and the values guiding our every step.
       </p>
-      <p className="font-medium text-base w-3/5 text-gray-800">
+      <p className="font-medium text-base w-3/6 text-gray-800">
         At Hyperbuild we specialise in the supply of ceiling materials,security
         gate and fencing products to contractors and end users; this includes
         Plaster boards, Pop cenent, accoustics, cornice, center pannels, Gate
