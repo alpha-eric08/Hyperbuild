@@ -25,7 +25,9 @@ const Started = () => {
         </div>
 
         <div className='text-center mb-5 md:mb-1 mt-7'>
-          <button className='py-2 px-5 rounded-md font-semibold  text-xl text-white'>Get started</button>
+          <a href="/contact">
+            <button className='py-2 px-5 rounded-md font-semibold  text-xl text-white'>Get started</button>
+          </a>
         </div>
     </div>
   )

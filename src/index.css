@@ -6,29 +6,27 @@
 @tailwind utilities;
 
 
-body{
-  color: #002152;
-}
 
-button{
-  background-color: #002152;
-}
+@layer base{
+  body{
+    @apply text-[#002152]
+  }
 
-button:hover{
-  background-color: #013583;
-}
+  button{
+    @apply bg-[#002152] hover:bg-[#013583]
+  }
 
-.b2{
-  color: #002152;
+  .footer,.testimonials{
+    @apply bg-[#002152]
+  }
   
 }
 
-.b2:hover{
-  background-color: #002152;
-}
 
-.footer,.testimonials{
-  background-color: #002152;
-}
+
+
+
+
+
 
 
